@@ -92,6 +92,7 @@ def run_test_sum_more_cosines():
     else:
         print('       actual:  ', answer)
 
+
 def sum_more_cosines(m, n):
     """
     What comes in:  Integers m and n, with m <= n.
@@ -216,6 +217,7 @@ def count_sines_from(m, n):
             count = count + 1
     return count
 
+
 def run_test_count_sines_vs_cosines():
     """ Tests the   count_sines_vs_cosines   function. """
     # -------------------------------------------------------------------------
@@ -238,7 +240,7 @@ def run_test_count_sines_vs_cosines():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 6 (continued).
+    # DONE: 6 (continued).
     # Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
@@ -299,7 +301,7 @@ def count_sines_vs_cosines(m):
       -- Also:  count_sines_vs_cosines(101) returns 100 (trust me!)
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPORTANT: As in previous problems in this session,
@@ -308,7 +310,7 @@ def count_sines_vs_cosines(m):
     # -------------------------------------------------------------------------
 
     count = 0
-    for k in range (2 * m + 1):
+    for k in range(2 * m + 1):
         if math.sin(k - m) > math.cos(k - m):
             count = count + 1
     return count
@@ -316,4 +318,6 @@ def count_sines_vs_cosines(m):
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
+
+
 main()
