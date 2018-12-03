@@ -73,12 +73,14 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #        one of the following two attempts is a CORRECT attempt
 #        (i.e., is equivalent in its functionality to the above)
 #        and one is WRONG.  Which is the WRONG one?
+#           SECOND one is wrong as changes x twice in between each circle.
 #
 #              x = starting_point.x
 #              for k in range(n):
 #                  center = rg.Point(x + (k * diameter), y)
 #                  circle = rg.Circle(point, radius)
 #                  circle.attach_to(window)
+#                   x = x + (2 * radius)
 #
 ###############################################################################
 #   *** MAKE SURE YOU UNDERSTAND THE 3   ACCUMULATOR   PATTERNS    ***
