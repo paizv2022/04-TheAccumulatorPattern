@@ -359,6 +359,7 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
 
     rectangle1.attach_to(window1)
     rectangle2.attach_to(window1)
+
     color = 0
     for k in range(n):
         line = rg.Line(rg.Point((center1x - k * width1), (center1y - k * height1)), rg.Point((center2x - k * width1), (center2y - k * height1)))
