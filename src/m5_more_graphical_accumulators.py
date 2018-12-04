@@ -350,10 +350,12 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
     ###########################################################################
     # -------------------------------------------------------------------------
     window1 = window
+
     center1x = rectangle1.get_center().x
     center1y = rectangle1.get_center().y
     center2x = rectangle2.get_center().x
     center2y = rectangle2.get_center().y
+
     width1 = center1x - rectangle1.get_lower_left_corner().x
     height1 = center1y - rectangle1.get_lower_left_corner().y
 
