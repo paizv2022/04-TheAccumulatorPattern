@@ -252,12 +252,13 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
         circle.fill_color = rectangle.fill_color
         circle.attach_to(window1)
 
-    for k in range (n):
-        circle2 = rg.Circle(rg.Point((rectangle._upper_left_corner.x + radius2), (-radius2 + rectangle.get_upper_right_corner().y -(2*k *radius2))), radius2)
+    for k in range(n):
+        circle2 = rg.Circle(rg.Point((rectangle._upper_left_corner.x + radius2), (-radius2 + rectangle.get_upper_right_corner().y - (2*k * radius2))), radius2)
         circle2.outline_color = rectangle.outline_color
         circle2.attach_to(window1)
 
     window1.render()
+
 
 def run_test_draw_lines_from_rectangles():
     """ Tests the   draw_lines_from_rectangles  function. """
